@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from escpos import *
 
 app = Flask(__name__)
-p = printer.Usb(0x0416, 0x5011, 0, 0x81, 0x03)
+p = printer.Usb(0x0416, 0x5011, 4, 0x81, 0x03)
 
 
 @app.route('/')
